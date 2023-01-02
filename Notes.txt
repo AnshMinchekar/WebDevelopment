@@ -1,0 +1,19 @@
+//Basics
+- Heading tags are from H1 to H6. H1 being the largest and H6 being the smallest.
+- strong tag is used to bold text.
+- emphasis tag <em> will turn text into italic.
+- <br> tag is for line break.
+- <hr> tag actually creates a line break as well as adds a visible line.
+- <del> tag is used to add a strike through. 
+
+//Links and images
+- <a> tag is used for external links.
+- href attribute is the location in <a> tag.
+- <a> tag will by default open in the same tab.
+- Adding a target="_blank" attribute will solve this.
+
+- <img> tag is for images. Has two attributes, src and alt.
+- src is for the the source/actual image.
+- alt is for when the source image doesn't load. Can display text. 
+
+- Also practicing Git along with thse files.
