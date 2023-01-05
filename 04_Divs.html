@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs & Spans</title>
+</head>
+<style>
+    .card{
+        border: 1px solid #ccc;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    .enhance{
+        color: yellow;
+        background-color: black;
+    }
+</style>
+<body>
+    <div id="main-header" class="card">
+        <h1>Hello World</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div id="main-nav">
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div id="about" class="card">
+        <h3>About</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A ratione, sequi, quas eum, suscipit cumque fugit vitae ut pariatur sit eaque molestias consequuntur. Tempore, eligendi.</p>
+    </div>
+    <div id="contact" class="card">
+        <h3>About</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus sint illo quisquam quam voluptatum odio?</p>
+    </div>
+    <div id="contact" class="card">
+        <ul>
+            <li>Address: India</li>
+            <li>Phone: 123456789</li>
+        </ul>
+    </div>
+    <div id="footer">
+        <p>Copyright 2022</p>
+    </div>
+    <!-- 
+    -Avoid repeating IDs.
+    -Classes can be repeated.
+    -div is a block level element
+    -span is an inline element.
+    -div and span example:
+    -->
+    <div><p>Lorem ipsum dolor sit amet consectetur <div class="enhance"> adipisicing elit. Saepe nulla dicta</div> repellendus qui pariatur labore suscipit. Laudantium saepe delectus vel quis nobis. Architecto minima impedit eveniet alias, eligendi deserunt omnis! <br> <br>
+
+    <span class="enhance">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum debitis minus nesciunt nam. Fuga, voluptatibus dolores? Doloribus quam ratione ullam </span>consequatur assumenda optio at sint! Aliquam eveniet voluptatibus quae voluptas!
+    </p></div>
+</body>
+</html>
