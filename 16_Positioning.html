@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        body{
+            height:4000px
+        }
+        /* By default, the position is set to static 
+        
+        1. Static: Not affected by top, bottom, right or left (tbrl)
+        2. Relative: Can be affected by tbrl
+        3. Absolute: Relative to parent
+        4. Fixed: Relative to viewport
+        5. Sticky: Will always show up 
+        */
+        #box-1{
+            position: relative;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+            background: red;
+        }
+        .container{
+            position: relative; 
+            /* Relative because it's the parent */
+            height: 500px;
+            width: 500px;
+            background: #333;
+        }
+        #box-2{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            background: mediumspringgreen;
+        }
+        #box-3{
+            position: absolute;
+            bottom: 100px;
+            right: 100px;
+            background: lightblue;
+        }
+        #box-4{
+            position: fixed;
+            background: lightpink;
+        }
+        #box-5{
+            position: sticky;
+            top: 0;
+            background: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div id="box-1" class="box"></div>
+    <div class="container">
+        <div id="box-2" class="box"></div>
+        <div id="box-3" class="box"></div>
+    </div>
+        <div id="box-4" class="box"></div>
+    <div id="box-5" class="box"></div>
+</body>
+</html>

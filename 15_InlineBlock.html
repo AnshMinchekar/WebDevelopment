@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline & Block Styling</title>
+    <style>
+        li{
+            display: inline;
+        }
+        li a{
+            padding-right: 20px;
+        }
+        img{
+            display: block;
+            margin: auto;  /*for centering elements. Does not work on inline elements alone, needs display to be set to block*/
+        }
+        .box{
+            box-sizing: border-box;
+            display: inline-block; /*simply inline will not work */
+            background: peachpuff;
+            border: 2px black solid;
+            margin: 15px;
+            width: 32%;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ul,li are block level elements -->
+    <ul>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Fashion</a></li>
+    </ul>
+    <br><br>
+    <!-- img tags are inline elements -->
+    <img src="./img/leaf.png" alt="My Image">
+    <img src="./img/leaf.png" alt="My Image">
+
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quisquam accusantium veritatis provident libero repellendus, consectetur quos accusamus optio aliquid?</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quisquam accusantium veritatis provident libero repellendus, consectetur quos accusamus optio aliquid?</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quisquam accusantium veritatis provident libero repellendus, consectetur quos accusamus optio aliquid?</p>
+    </div>
+</body>
+</html>
